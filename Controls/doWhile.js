@@ -1,0 +1,20 @@
+function getInteiroAleatorio(min, max) {
+    const valor = Math.random() * (max - min) + min
+    return Math.floor(valor)
+}
+
+let opcao = -1
+
+do {
+    opcao = getInteiroAleatorio(-1, 10)
+    console.log(`RNGod = ${opcao}`)
+}
+
+while (opcao != -1)
+
+console.log('RNGod has set you free!')
+
+/*
+while checa o laço ANTES do bloco
+do... while checa o laço DEPOIS do bloco
+*/
